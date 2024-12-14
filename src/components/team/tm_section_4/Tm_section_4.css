@@ -1,0 +1,9 @@
+.tmscn4 {
+  background-color: blueviolet;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}

@@ -1,0 +1,18 @@
+.sectiontwo,
+.sectionthree,
+.sectionfour
+{
+    min-height: 100vh;
+}
+
+/*txt1.slice(0,10).map((item)=>(
+              <li key={item.id}>{item.title}</li>
+            ))
+              <label htmlFor='textbx1'></label>
+        <input type="text" id="textbx1" value={txt1} placeholder='Type here' />
+        <label htmlFor='textbx2'></label>
+        <input type="text" id="textbx2" value={txt2} placeholder='Type here' />
+        <button onClick={ufun}>Click Me</button>
+            
+            
+            */

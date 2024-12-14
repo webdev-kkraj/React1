@@ -1,0 +1,37 @@
+.icon {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 50%;
+  color: #1eb2a6;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.5s;
+  width: 40px;
+}
+
+.right-toplogo-secn .social {
+  display: inline-block;
+}
+.right-toplogo-secn {
+  text-align: right;
+}
+
+.navul-list {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+}
+nav {
+  background: #1eb2a6;
+  padding: 20px;
+}
+.tpfullsecn {
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.left-toplogo-secn img {
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

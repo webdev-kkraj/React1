@@ -1,0 +1,9 @@
+.copyright {
+  background-color: yellowgreen;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 20px;
+}

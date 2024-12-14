@@ -1,0 +1,62 @@
+import { MenuComponent } from '../Menu/MenuComponent';
+import { Sectiontwo, Sectionthree, Sectionfour } from '../Sectiontwo/Sectiontwo';
+import { Link } from 'react-scroll';
+
+export const HomeComponent = () => {
+  const userdet = {
+    id:'1',
+    name:'Ram',
+    regno:'1200293'
+  };
+  return (
+    <>
+    <Link to='section1' smooth={true} duration={500}>
+    Section 1</Link>
+    <Link to='section2' smooth={true} duration={500}>
+    Section 2</Link>
+    <Link to='section3' smooth={true} duration={500}>
+    Section 3</Link>
+    <Link to='section4' smooth={true} duration={500}>
+    Section 4</Link>
+    <Link to='section5' smooth={true} duration={500}>
+    Section 5</Link>
+    <Sectiontwo text='data' />
+    <Sectionthree userdetail = {userdet} />
+    <Sectionfour />
+    </>
+  );
+};
+
+
+import React from 'react'
+import { Element } from 'react-scroll';
+import LinearProgress from '@mui/material/LinearProgress';
+
+export const Sectiontwo = ({text}) => {
+  return (
+    <Element className="sectiontwo" id="section2">
+    <h2>Section 2 {text}</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <LinearProgress variant="determinate" value={50} />
+    </Element>
+  )
+}
+
+export const Sectionthree = ({userdetail}) => {
+  const {id,regno} = userdetail ;
+    return (
+      <Element className="sectionthree" id="section3">
+      <h2>Section 3 {regno}=={id}</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </Element>
+    )
+  }
+
+  export const Sectionfour = () => {
+    return (
+      <Element className="sectionfour" id="section4">
+      <h2>Section 4</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </Element>
+    )
+  }
